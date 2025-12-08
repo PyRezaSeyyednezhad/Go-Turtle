@@ -1,7 +1,3 @@
-Looking at your code, I need to clarify that this is **Python Turtle code**, not Go code. Your README should reflect this. Here's an accurate README for your Python Turtle Graphics application:
-
----
-
 # Go-Turtle 🐢
 
 **Python Turtle Graphics Application with Customizable Settings**
