@@ -1,157 +1,171 @@
-# Go-Turtle
+Looking at your code, I need to clarify that this is **Python Turtle code**, not Go code. Your README should reflect this. Here's an accurate README for your Python Turtle Graphics application:
 
-A Turtle graphics implementation in Go, inspired by Python's turtle module, providing an interactive way to learn programming and create graphics.
+---
 
-## 🚀 Features
+# Go-Turtle 🐢
 
-- **Turtle Graphics**: Classic turtle graphics commands (forward, backward, left, right, etc.)
-- **Multiple Drawing Modes**: 
-  - **Manual Mode**: Step-by-step turtle control
-  - **Custom Draw Mode**: Define your own drawing patterns
-  - **Preset Mode**: Built-in geometric patterns
-- **Color Support**: Set pen color for vibrant drawings
-- **Speed Control**: Adjustable drawing speed
-- **Canvas Operations**: Clear screen, reset turtle position, and more
-- **Interactive CLI**: User-friendly command-line interface
+**Python Turtle Graphics Application with Customizable Settings**
 
-## 📦 Installation
+A keyboard-controlled turtle graphics application built with Python's `turtle` module and `tkinter` for customizable settings.
 
+## 🖼️ Preview
+
+![Go-Turtle Interface](https://via.placeholder.com/500x300/000/fff?text=Go-Turtle+Settings+Screen)
+
+## ✨ Features
+
+- 🎨 **Customizable Settings**: Configure background color, pen color, pen size, and movement length
+- ⌨️ **Keyboard Control**: Use arrow keys to control turtle movement
+- ⚙️ **Pen Controls**: Toggle pen up/down, clear screen, and undo actions
+- 🖌️ **Visual Customization**: Real-time preview of drawing with your chosen settings
+- 🚀 **Easy Setup**: Simple configuration before starting to draw
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.6 or higher
+- tkinter (usually included with Python installation)
+
+### Setup
+
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/PyRezaSeyyednezhad/Go-Turtle.git
-
-# Navigate to the project directory
 cd Go-Turtle
+```
 
-# Run the program
-go run main.go
+2. Install requirements (if any):
+```bash
+# No additional packages required for basic functionality
+```
+
+3. Run the application:
+```bash
+python main.py
 ```
 
 ## 🎮 Usage
 
-### Interactive Mode
+### 1. Configuration Screen
+When you start the application, you'll see a settings window:
 
-Run the program and follow the interactive menu:
+**Available Settings:**
+- **Background Color**: Enter hex color (e.g., `#000000` for black)
+- **Pen Color**: Enter hex color (e.g., `#FFFFFF` for white)
+- **Font Size/Pen Size**: Enter number 1-20
+- **Move Length**: Enter number 1-100 (pixels per movement)
 
-```bash
-go run main.go
-```
+**Default Values (if left empty):**
+- Background: Black (`#000000`)
+- Pen Color: White (`#FFFFFF`)
+- Pen Size: 5
+- Move Length: 50 pixels
 
-You'll see:
-```
-████████ ██    ██ ██████  ████████ ██      ███████ 
-   ██     ██  ██  ██   ██    ██    ██      ██     
-   ██      ████   ██████     ██    ██      ███████ 
-   ██       ██    ██   ██    ██    ██           ██ 
-   ██       ██    ██████     ██    ███████ ███████ 
+### 2. Turtle Control Window
+After clicking "Run", the turtle graphics window opens:
 
-Choose Drawing Mode:
-1. Manual Mode
-2. Custom Draw Mode
-3. Preset Mode
-4. Exit
-```
-
-### Modes
-
-#### 1. Manual Mode
-Control the turtle step by step with commands:
-- `f` or `forward`: Move forward
-- `b` or `backward`: Move backward
-- `l` or `left`: Turn left
-- `r` or `right`: Turn right
-- `c` or `color`: Change pen color
-- `s` or `speed`: Change drawing speed
-- `clear`: Clear the screen
-- `home`: Return to starting position
-- `exit`: Exit to main menu
-
-#### 2. Custom Draw Mode
-Define custom drawing patterns using turtle commands. Example pattern:
-```
-f 100
-r 90
-f 50
-l 45
-f 75
-```
-
-#### 3. Preset Mode
-Choose from built-in patterns:
-- Square
-- Circle
-- Triangle
-- Star
-- Spiral
+**Keyboard Controls:**
+| Key | Action |
+|-----|--------|
+| **↑** (Up Arrow) | Move turtle upward |
+| **↓** (Down Arrow) | Move turtle downward |
+| **→** (Right Arrow) | Move turtle right |
+| **←** (Left Arrow) | Move turtle left |
+| **F1** | Pen Up (stop drawing) |
+| **F2** | Pen Down (start drawing) |
+| **F3** | Clear screen |
+| **F4** | Undo last action |
 
 ## 📁 Project Structure
 
 ```
 Go-Turtle/
-├── main.go              # Main entry point
-├── README.md            # This file
-├── .gitignore          # Git ignore file
-└── docs/               # Documentation
-    └── HowToUse.txt    # Detailed usage instructions
+├── main.py              # Main application file
+├── README.md            # Documentation
+└── .gitignore          # Git ignore patterns
 ```
 
-## 🔧 Implementation Details
+## 💻 Code Overview
 
-The project implements a `Turtle` struct with methods for:
-- Movement (`Forward()`, `Backward()`)
-- Rotation (`Left()`, `Right()`)
-- Drawing control (`PenUp()`, `PenDown()`)
-- Canvas operations (`Clear()`, `Home()`)
-- Appearance control (`SetColor()`, `SetSpeed()`)
+The application consists of two main components:
 
-The turtle maintains:
-- Current position (x, y)
-- Heading direction
-- Pen state (up/down)
-- Drawing color
-- Movement speed
+### 1. Settings Window (`tkinter`)
+- Creates a configuration interface
+- Validates user input
+- Sets default values if inputs are empty
+- Launches the turtle graphics window
 
-## 🎨 Examples
+### 2. Turtle Graphics Window (`turtle`)
+- Interactive drawing canvas
+- Keyboard event listeners for control
+- Real-time drawing with custom settings
 
-### Draw a Square
-```go
-// In Custom Draw Mode:
-f 100
-r 90
-f 100
-r 90
-f 100
-r 90
-f 100
+## 🔧 Customization
+
+### Default Settings
+You can modify the default values in the `config()` function:
+
+```python
+# Current defaults:
+tl.bgcolor("#000")      # Background color
+tl.color("#fff")        # Pen color
+tl.pensize(5)           # Pen thickness
+MOVE_LENGTH = 50        # Movement distance
 ```
 
-### Draw a Circle
-```go
-// Using Preset Mode -> Circle
-// Or manually:
-repeat 36 {
-    f 10
-    r 10
-}
+### Adding New Features
+To add new keyboard controls:
+
+```python
+def new_action():
+    # Your action here
+    pass
+
+tl.onkeypress(new_action, 'KeyName')  # e.g., 'a', 'space', etc.
 ```
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Contributions are welcome! Here are some ways to contribute:
 
+### Feature Ideas:
+1. **Save/Load Drawings**: Add functionality to save drawings as images
+2. **More Shapes**: Predefined shape buttons (circle, square, etc.)
+3. **Color Palette**: Visual color picker instead of hex codes
+4. **Grid System**: Toggle grid for precise drawing
+5. **Shape Fill**: Add fill color options
+6. **Animation**: Record and replay drawing sequences
+
+### How to Contribute:
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a feature branch: `git checkout -b feature/NewFeature`
+3. Commit changes: `git commit -m 'Add NewFeature'`
+4. Push to branch: `git push origin feature/NewFeature`
 5. Open a Pull Request
 
-### Areas for Contribution:
-- Add new preset patterns
-- Implement color gradients
-- Add save/load functionality for drawings
-- Create a GUI interface
-- Add unit tests
-- Improve documentation
+## 🐛 Troubleshooting
+
+### Common Issues:
+
+1. **ModuleNotFoundError: No module named 'tkinter'**
+   ```bash
+   # On Ubuntu/Debian:
+   sudo apt-get install python3-tk
+   
+   # On macOS with Homebrew:
+   brew install python-tk
+   
+   # On Windows: Usually included by default
+   ```
+
+2. **Window doesn't respond to keyboard**
+   - Ensure the turtle window is active (click on it)
+   - Some systems may require focus on the turtle window
+
+3. **Colors not working**
+   - Use proper hex format: `#RRGGBB`
+   - Ensure hash symbol (`#`) is included
+   - Valid example: `#FF5733`
 
 ## 📝 License
 
@@ -159,17 +173,18 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- Inspired by Python's turtle graphics module
-- Thanks to all contributors who have helped with this project
+- Built with Python's built-in `turtle` graphics module
+- Uses `tkinter` for the settings interface
+- Inspired by Logo programming language and educational tools
 
 ## 📞 Support
 
-For questions, issues, or suggestions:
+For issues, questions, or suggestions:
 - Open an [Issue](https://github.com/PyRezaSeyyednezhad/Go-Turtle/issues)
-- Check the [docs/HowToUse.txt](docs/HowToUse.txt) for detailed instructions
+- Provide details about your Python version and operating system
 
 ---
 
-**Happy Coding! 🐢✨**
+**Happy Drawing! 🎨🐢**
 
-*Built with Go and ❤️ by the Go-Turtle community*
+*Created with Python Turtle Graphics*
