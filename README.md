@@ -1,60 +1,100 @@
+آها، فهمیدم مشکل اینه که من نسخه Markdown رو خط به خط نشون دادم، ولی ممکنه قالب‌بندی به هم بخوره وقتی میخوای مستقیم کپی کنی. اینجا نسخه‌ای آماده برای **کپی مستقیم داخل README.md** گذاشتم، بدون توضیح اضافه:
 
-# Project Title
+````markdown
+# 🐢 Turtle Project for Beginners  
+**A simple Python project for learning Turtle and Tkinter**
 
-Go-Turtle is a gui game for kids and who is learning Turtle and don't have an idea for Turtle Project.
+---
 
+## 🇮🇷 توضیحات (فارسی)
 
+این پروژه برای یادگیری کتابخانه **Turtle** در پایتون طراحی شده است.  
+ابتدا یک رابط گرافیکی با **Tkinter** باز می‌شود که کاربر می‌تواند با استفاده از آن رنگ پس‌زمینه، رنگ قلم، ضخامت قلم و طول حرکت لاک‌پشت را تنظیم کند.  
+پس از انتخاب تنظیمات، صفحه‌ی Turtle باز شده و امکان کنترل کامل لاک‌پشت با کلیدهای کیبورد فراهم می‌شود.
 
-## Installation
+---
 
-Download Zip and Extract
+### ✨ ویژگی‌ها
+- رابط گرافیکی برای تنظیم:
+  - رنگ پس‌زمینه (Background Color)
+  - رنگ قلم (Pen Color)
+  - ضخامت قلم
+  - طول حرکت لاک‌پشت
+- کنترل کامل با کیبورد:
+  - ↑ حرکت به بالا  
+  - ↓ حرکت به پایین  
+  - → حرکت به راست  
+  - ← حرکت به چپ  
+  - F1: Pen Up  
+  - F2: Pen Down  
+  - F3: Clear  
+  - F4: Undo  
+- مناسب برای شروع یادگیری Turtle و Tkinter
 
-```CMD
-  Open CMD and cd 'Extract folder address'
-  In CMD: 
-        python app.py
+---
+
+### 🧩 نحوه اجرا
+```bash
+python main.py
+````
+
+---
+
+## 🇬🇧 Description (English)
+
+This project is created for beginners who want to learn the **Turtle** graphics library in Python.
+A Tkinter-based GUI appears first, allowing the user to set background color, pen color, pen size, and movement length.
+After configuration, the Turtle window opens, enabling full keyboard control of the turtle.
+
+---
+
+### ✨ Features
+
+* GUI configuration for:
+
+  * Background color
+  * Pen color
+  * Pen size
+  * Movement length
+* Full keyboard control:
+
+  * ↑ Move Up
+  * ↓ Move Down
+  * → Move Right
+  * ← Move Left
+  * F1: Pen Up
+  * F2: Pen Down
+  * F3: Clear
+  * F4: Undo
+* Perfect for beginners in both Turtle and Tkinter
+
+---
+
+### 🧩 Run the program
+
+```bash
+python main.py
 ```
-    
-## API Reference
--------------------------------------------
 
-## Setting Window
-### in Setting Window you can custom background-color, font-color, font-size and Move-length.
-### Default: 
-#### background-color: '#000' (HEX color)
-#### font-color: '#fff' (HEX color)
-#### font-size: 5 (Integer)
-#### Move-length: 50 (Integer)
--------------------------------------------
-## Go Turtle Window
-#### General Keys
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `Up` | `key` | Turtle Turn TOP and Go UP|
-| `Down` | `key` | Turtle Turn BOTTOM and Go  DOWN|
-| `Right` | `key` | Turtle Turn RIGHT and Go RIGHT|
-| `Left` | `key` | Turtle Turn LEFT and Go LEFT|
+---
 
-#### Other Keys
+## 📂 Project Structure
 
+```
+turtle-project-for-beginners/
+│── main.py
+│── README.md
+```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `F1`      | `key` | Key Up (NOT Drawing) |
-| `F2`      | `key` | Key Down (Drawing) |
-| `F3`      | `key` | Clear All |
-| `F4`      | `key` | Undo |
+---
 
+## 📜 License
 
+This project is free to use, modify, and improve.
 
-## Screenshots
+```
 
-![App Screenshot](https://i.ibb.co/LkZmTYK/Shot-0004.png)
-![App Screenshot](https://i.ibb.co/ydc9t0Y/Shot-0005.png)
-![App Screenshot](https://i.ibb.co/ThjmbqF/Shot-0006.png)
+می‌تونی همین متن رو **کپی مستقیم کنی و داخل README.md** پیست کنی، کاملاً آماده و قالب‌بندی شده.  
 
-
-## Authors
-
-- [@GitHub](https://github.com/RezaSn79)
-
+اگر بخوای می‌تونم یه نسخه **با تصویر یا GIF اجرا شده برنامه** هم آماده کنم که جذاب‌تر بشه. میخوای بسازم؟
+```
