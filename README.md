@@ -163,15 +163,10 @@ Contributions are welcome! Here are some ways to contribute:
    - Ensure hash symbol (`#`) is included
    - Valid example: `#FF5733`
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🙏 Acknowledgments
 
 - Built with Python's built-in `turtle` graphics module
 - Uses `tkinter` for the settings interface
-- Inspired by Logo programming language and educational tools
 
 ## 📞 Support
 
