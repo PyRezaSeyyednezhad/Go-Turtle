@@ -1,135 +1,175 @@
-## 🐢 پروژه Turtle برای مبتدیان
+# Go-Turtle
 
-این ریپازیتوری شامل یک پروژه ساده و آموزشی برای یادگیری کتابخانه **Turtle** در پایتون است.
-در این برنامه، ابتدا یک رابط گرافیکی (GUI) با استفاده از Tkinter نمایش داده می‌شود که کاربر می‌تواند از طریق آن تنظیمات اولیه مانند رنگ پس‌زمینه، رنگ قلم، ضخامت قلم و طول حرکت لاک‌پشت را تعیین کند.
-بعد از تنظیمات، صفحه‌ی Turtle باز شده و کاربر می‌تواند با کلیدهای جهت‌نما و چند کلید عملکردی دیگر، لاک‌پشت را کنترل و نقاشی رسم کند.
+A Turtle graphics implementation in Go, inspired by Python's turtle module, providing an interactive way to learn programming and create graphics.
 
----
+## 🚀 Features
 
-## ✨ ویژگی‌ها
+- **Turtle Graphics**: Classic turtle graphics commands (forward, backward, left, right, etc.)
+- **Multiple Drawing Modes**: 
+  - **Manual Mode**: Step-by-step turtle control
+  - **Custom Draw Mode**: Define your own drawing patterns
+  - **Preset Mode**: Built-in geometric patterns
+- **Color Support**: Set pen color for vibrant drawings
+- **Speed Control**: Adjustable drawing speed
+- **Canvas Operations**: Clear screen, reset turtle position, and more
+- **Interactive CLI**: User-friendly command-line interface
 
--**رابط گرافیکی برای تنظیم:**
-
-  -***رنگ پس‌زمینه***
-  -***رنگ قلم***
-  -***ضخامت قلم***
-  -***طول حرکت***
-  
--**کنترل کامل با کیبورد:**
-
-  -***↑ حرکت بالا***
-  -***↓ حرکت پایین***
-  -***→ حرکت راست***
-  -***← حرکت چپ***
-  -***F1: بالا بردن قلم (Pen Up)***
-  -***F2: پایین آوردن قلم (Pen Down)***
-  -***F3: پاک کردن صفحه***
-  -***F4: Undo***
--*مناسب برای شروع یادگیری **Turtle** و **Tkinter***
-
----
-
-## 🧩 نحوه اجرا
-
-1. نصب پایتون (نسخه 3.8+)
-2. اجرای برنامه:
+## 📦 Installation
 
 ```bash
-python main.py
+# Clone the repository
+git clone https://github.com/PyRezaSeyyednezhad/Go-Turtle.git
+
+# Navigate to the project directory
+cd Go-Turtle
+
+# Run the program
+go run main.go
 ```
 
-بعد از اجرای برنامه ابتدا صفحه تنظیمات باز می‌شود. پس از انتخاب مقادیر و فشردن دکمه **Run**، صفحه Turtle ظاهر می‌شود.
+## 🎮 Usage
 
----
+### Interactive Mode
 
-## 📂 ساختار فایل
-
-```
-turtle-project-for-beginners/
-│── main.py
-│── README.md
-```
-
----
-
-## 📸 دموی تصاویر / GIF
-
-(اگر خواستی، برایت GIF از اجرای برنامه می‌سازم)
-
----
-
-## 📜 مجوز (License)
-
-این پروژه آزاد است و می‌توانید آن را ویرایش، بازنویسی یا توسعه دهید.
-
----
-
-# 🇬🇧 README (English)
-
-## 🐢 Turtle Project for Beginners
-
-This repository contains a simple and educational Python project designed to help beginners learn the **Turtle** graphics library.
-The program starts with a Tkinter-based GUI that allows the user to set the background color, pen color, pen size, and movement length.
-After configuration, a Turtle window opens where the user can fully control the turtle using keyboard shortcuts.
-
----
-
-## ✨ Features
-
-* GUI settings panel:
-
-  * Background color
-  * Pen color
-  * Pen size
-  * Movement length
-* Full keyboard control:
-
-  * ↑ Move Up
-  * ↓ Move Down
-  * → Move Right
-  * ← Move Left
-  * F1: Pen Up
-  * F2: Pen Down
-  * F3: Clear screen
-  * F4: Undo
-* Great for beginners learning **Turtle** and **Tkinter**
-
----
-
-## 🧩 How to Run
-
-1. Install Python (3.8+ recommended)
-2. Run the project:
+Run the program and follow the interactive menu:
 
 ```bash
-python main.py
+go run main.go
 ```
 
-The settings window will appear first. Once you enter your values and click **Run**, the turtle drawing window will open.
+You'll see:
+```
+████████ ██    ██ ██████  ████████ ██      ███████ 
+   ██     ██  ██  ██   ██    ██    ██      ██     
+   ██      ████   ██████     ██    ██      ███████ 
+   ██       ██    ██   ██    ██    ██           ██ 
+   ██       ██    ██████     ██    ███████ ███████ 
 
----
+Choose Drawing Mode:
+1. Manual Mode
+2. Custom Draw Mode
+3. Preset Mode
+4. Exit
+```
 
-## 📂 Project Structure
+### Modes
+
+#### 1. Manual Mode
+Control the turtle step by step with commands:
+- `f` or `forward`: Move forward
+- `b` or `backward`: Move backward
+- `l` or `left`: Turn left
+- `r` or `right`: Turn right
+- `c` or `color`: Change pen color
+- `s` or `speed`: Change drawing speed
+- `clear`: Clear the screen
+- `home`: Return to starting position
+- `exit`: Exit to main menu
+
+#### 2. Custom Draw Mode
+Define custom drawing patterns using turtle commands. Example pattern:
+```
+f 100
+r 90
+f 50
+l 45
+f 75
+```
+
+#### 3. Preset Mode
+Choose from built-in patterns:
+- Square
+- Circle
+- Triangle
+- Star
+- Spiral
+
+## 📁 Project Structure
 
 ```
-turtle-project-for-beginners/
-│── main.py
-│── README.md
+Go-Turtle/
+├── main.go              # Main entry point
+├── README.md            # This file
+├── .gitignore          # Git ignore file
+└── docs/               # Documentation
+    └── HowToUse.txt    # Detailed usage instructions
 ```
 
+## 🔧 Implementation Details
+
+The project implements a `Turtle` struct with methods for:
+- Movement (`Forward()`, `Backward()`)
+- Rotation (`Left()`, `Right()`)
+- Drawing control (`PenUp()`, `PenDown()`)
+- Canvas operations (`Clear()`, `Home()`)
+- Appearance control (`SetColor()`, `SetSpeed()`)
+
+The turtle maintains:
+- Current position (x, y)
+- Heading direction
+- Pen state (up/down)
+- Drawing color
+- Movement speed
+
+## 🎨 Examples
+
+### Draw a Square
+```go
+// In Custom Draw Mode:
+f 100
+r 90
+f 100
+r 90
+f 100
+r 90
+f 100
+```
+
+### Draw a Circle
+```go
+// Using Preset Mode -> Circle
+// Or manually:
+repeat 36 {
+    f 10
+    r 10
+}
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Areas for Contribution:
+- Add new preset patterns
+- Implement color gradients
+- Add save/load functionality for drawings
+- Create a GUI interface
+- Add unit tests
+- Improve documentation
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Inspired by Python's turtle graphics module
+- Thanks to all contributors who have helped with this project
+
+## 📞 Support
+
+For questions, issues, or suggestions:
+- Open an [Issue](https://github.com/PyRezaSeyyednezhad/Go-Turtle/issues)
+- Check the [docs/HowToUse.txt](docs/HowToUse.txt) for detailed instructions
+
 ---
 
-## 📸 Demo / GIF
+**Happy Coding! 🐢✨**
 
-(If you want, I can generate a GIF preview of the program.)
-
----
-
-## 📜 License
-
-This project is free to use, modify, and improve.
-
----
-
-اگر خواستی نسخه Markdown این فایل رو هم مستقیم داخل کانواس (canvas) برات بسازم، فقط بگو:
-**"بذار توی کانواس"** 🙂
+*Built with Go and ❤️ by the Go-Turtle community*
