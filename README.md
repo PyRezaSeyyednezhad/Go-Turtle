@@ -1,56 +1,83 @@
-آها، فهمیدم مشکل اینه که من نسخه Markdown رو خط به خط نشون دادم، ولی ممکنه قالب‌بندی به هم بخوره وقتی میخوای مستقیم کپی کنی. اینجا نسخه‌ای آماده برای **کپی مستقیم داخل README.md** گذاشتم، بدون توضیح اضافه:
+# 🇮🇷 README (فارسی)
 
-````markdown
-# 🐢 Turtle Project for Beginners  
-**A simple Python project for learning Turtle and Tkinter**
+## 🐢 پروژه Turtle برای مبتدیان
 
----
-
-## 🇮🇷 توضیحات (فارسی)
-
-این پروژه برای یادگیری کتابخانه **Turtle** در پایتون طراحی شده است.  
-ابتدا یک رابط گرافیکی با **Tkinter** باز می‌شود که کاربر می‌تواند با استفاده از آن رنگ پس‌زمینه، رنگ قلم، ضخامت قلم و طول حرکت لاک‌پشت را تنظیم کند.  
-پس از انتخاب تنظیمات، صفحه‌ی Turtle باز شده و امکان کنترل کامل لاک‌پشت با کلیدهای کیبورد فراهم می‌شود.
+این ریپازیتوری شامل یک پروژه ساده و آموزشی برای یادگیری کتابخانه **Turtle** در پایتون است.
+در این برنامه، ابتدا یک رابط گرافیکی (GUI) با استفاده از Tkinter نمایش داده می‌شود که کاربر می‌تواند از طریق آن تنظیمات اولیه مانند رنگ پس‌زمینه، رنگ قلم، ضخامت قلم و طول حرکت لاک‌پشت را تعیین کند.
+بعد از تنظیمات، صفحه‌ی Turtle باز شده و کاربر می‌تواند با کلیدهای جهت‌نما و چند کلید عملکردی دیگر، لاک‌پشت را کنترل و نقاشی رسم کند.
 
 ---
 
-### ✨ ویژگی‌ها
-- رابط گرافیکی برای تنظیم:
-  - رنگ پس‌زمینه (Background Color)
-  - رنگ قلم (Pen Color)
-  - ضخامت قلم
-  - طول حرکت لاک‌پشت
-- کنترل کامل با کیبورد:
-  - ↑ حرکت به بالا  
-  - ↓ حرکت به پایین  
-  - → حرکت به راست  
-  - ← حرکت به چپ  
-  - F1: Pen Up  
-  - F2: Pen Down  
-  - F3: Clear  
-  - F4: Undo  
-- مناسب برای شروع یادگیری Turtle و Tkinter
+## ✨ ویژگی‌ها
+
+* رابط گرافیکی برای تنظیم:
+
+  * رنگ پس‌زمینه
+  * رنگ قلم
+  * ضخامت قلم
+  * طول حرکت
+* کنترل کامل با کیبورد:
+
+  * ↑ حرکت بالا
+  * ↓ حرکت پایین
+  * → حرکت راست
+  * ← حرکت چپ
+  * F1: بالا بردن قلم (Pen Up)
+  * F2: پایین آوردن قلم (Pen Down)
+  * F3: پاک کردن صفحه
+  * F4: Undo
+* مناسب برای شروع یادگیری **Turtle** و **Tkinter**
 
 ---
 
-### 🧩 نحوه اجرا
+## 🧩 نحوه اجرا
+
+1. نصب پایتون (نسخه 3.8+)
+2. اجرای برنامه:
+
 ```bash
 python main.py
-````
+```
+
+بعد از اجرای برنامه ابتدا صفحه تنظیمات باز می‌شود. پس از انتخاب مقادیر و فشردن دکمه **Run**، صفحه Turtle ظاهر می‌شود.
 
 ---
 
-## 🇬🇧 Description (English)
+## 📂 ساختار فایل
 
-This project is created for beginners who want to learn the **Turtle** graphics library in Python.
-A Tkinter-based GUI appears first, allowing the user to set background color, pen color, pen size, and movement length.
-After configuration, the Turtle window opens, enabling full keyboard control of the turtle.
+```
+turtle-project-for-beginners/
+│── main.py
+│── README.md
+```
 
 ---
 
-### ✨ Features
+## 📸 دموی تصاویر / GIF
 
-* GUI configuration for:
+(اگر خواستی، برایت GIF از اجرای برنامه می‌سازم)
+
+---
+
+## 📜 مجوز (License)
+
+این پروژه آزاد است و می‌توانید آن را ویرایش، بازنویسی یا توسعه دهید.
+
+---
+
+# 🇬🇧 README (English)
+
+## 🐢 Turtle Project for Beginners
+
+This repository contains a simple and educational Python project designed to help beginners learn the **Turtle** graphics library.
+The program starts with a Tkinter-based GUI that allows the user to set the background color, pen color, pen size, and movement length.
+After configuration, a Turtle window opens where the user can fully control the turtle using keyboard shortcuts.
+
+---
+
+## ✨ Features
+
+* GUI settings panel:
 
   * Background color
   * Pen color
@@ -64,17 +91,22 @@ After configuration, the Turtle window opens, enabling full keyboard control of 
   * ← Move Left
   * F1: Pen Up
   * F2: Pen Down
-  * F3: Clear
+  * F3: Clear screen
   * F4: Undo
-* Perfect for beginners in both Turtle and Tkinter
+* Great for beginners learning **Turtle** and **Tkinter**
 
 ---
 
-### 🧩 Run the program
+## 🧩 How to Run
+
+1. Install Python (3.8+ recommended)
+2. Run the project:
 
 ```bash
 python main.py
 ```
+
+The settings window will appear first. Once you enter your values and click **Run**, the turtle drawing window will open.
 
 ---
 
@@ -88,13 +120,17 @@ turtle-project-for-beginners/
 
 ---
 
+## 📸 Demo / GIF
+
+(If you want, I can generate a GIF preview of the program.)
+
+---
+
 ## 📜 License
 
 This project is free to use, modify, and improve.
 
-```
+---
 
-می‌تونی همین متن رو **کپی مستقیم کنی و داخل README.md** پیست کنی، کاملاً آماده و قالب‌بندی شده.  
-
-اگر بخوای می‌تونم یه نسخه **با تصویر یا GIF اجرا شده برنامه** هم آماده کنم که جذاب‌تر بشه. میخوای بسازم؟
-```
+اگر خواستی نسخه Markdown این فایل رو هم مستقیم داخل کانواس (canvas) برات بسازم، فقط بگو:
+**"بذار توی کانواس"** 🙂
