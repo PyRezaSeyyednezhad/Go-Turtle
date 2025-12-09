@@ -6,7 +6,9 @@ A keyboard-controlled turtle graphics application built with Python's `turtle` m
 
 ## 🖼️ Preview
 
-![Go-Turtle Interface](https://via.placeholder.com/500x300/000/fff?text=Go-Turtle+Settings+Screen)
+<p align="center">
+  <img src="Cover/Go-Turtle-Cover.png" width="700">
+</p>
 
 ## ✨ Features
 
