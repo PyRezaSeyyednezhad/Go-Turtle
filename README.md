@@ -4,7 +4,7 @@
 
 A keyboard-controlled turtle graphics application built with Python's `turtle` module and `tkinter` for customizable settings.
 
-## 🖼️ Preview
+## 🖼️ Cover
 
 <p align="center">
   <img src="Cover/Go-Turtle-Cover.png" width="700">
