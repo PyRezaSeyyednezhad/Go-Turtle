@@ -6,7 +6,9 @@ A keyboard-controlled turtle graphics application built with Python's `turtle` m
 
 ## 🖼️ Preview
 
-![Go-Turtle Interface](https://via.placeholder.com/500x300/000/fff?text=Go-Turtle+Settings+Screen)
+<p align="center">
+  <img src="Cover/Go-Turtle-Cover.png" width="700">
+</p>
 
 ## ✨ Features
 
@@ -163,15 +165,10 @@ Contributions are welcome! Here are some ways to contribute:
    - Ensure hash symbol (`#`) is included
    - Valid example: `#FF5733`
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🙏 Acknowledgments
 
 - Built with Python's built-in `turtle` graphics module
 - Uses `tkinter` for the settings interface
-- Inspired by Logo programming language and educational tools
 
 ## 📞 Support
 
